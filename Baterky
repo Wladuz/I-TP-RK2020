@@ -1,0 +1,8 @@
+1.	Menic napatia na 24V(menice 6A spickovo) cca 144W
+http://www.meanwell.co/napajacie-zdroje/dc-dc-menice/sd-priemyselne/sd-200/show/sd-200b-24
+2.	Menic napatia na 12V (PC spicka 2,8A, Led 2A) cca 60W http://www.meanwell.co/napajacie-zdroje/dc-dc-menice/sd-priemyselne/sd-100/show/sd-100b-12
+3.	OverCurent, OverVoltage, ShortCircuit, nabijanie a status(toto sa da vyriesit jednou doskou)
+4.	Drziak bateriek ako ich pospajat spolu ( 3D tlaciaren alebo kupit) 
+5.	Pripevnenie bateriek k robotovi(3D tlaciaren)
+6.	Baterky z toho co som hladal su najvhodnejsie 18650 li-ion 3,7V (3,2V-4,2V) cca 2600mAh cca 4-5e/kus zhruba ich bude treba 20 na 200Wh(pri max vykone robot pojde 1 hodinu) https://price-mag.net/produkt/bateria-samsung-icr-18650-26jm-2600mah/
+7.	Doriesit komunikaciu o stave baterky, napr arduino ,ktore cez seriovy port bude posielat stav.
