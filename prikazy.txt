@@ -1,0 +1,17 @@
+
+
+#Spawnem svet
+roslaunch gazebo_ros empty_world.launch
+#Spawnem robota
+roslaunch m2wr_description spawn.launch
+#Lidar vision
+roslaunch m2wr_description rviz.launch
+#Mapovaci balicek
+roslaunch gmapping slam_gmapping_pr2.launch
+#Ovladanie robota
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+#Prikaz na ulozenie mapy
+rosrun map_server map_saver -f test.yaml
+#Prikaz na nahratie mapy
+rosrun map_server map_server test.yaml.yaml
+#
