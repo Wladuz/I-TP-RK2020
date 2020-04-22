@@ -1,10 +1,9 @@
 
-
-#Spawnem svet
-roslaunch gazebo_ros empty_world.launch
+#Spawnem svet (nezabudni si nahrat bludisko)
+roslaunch gazebo_ros empty_world.launch 
 #Spawnem robota
 roslaunch m2wr_description spawn.launch
-#Lidar vision
+#Rviz pre vizualizaciu a nastavenie pozadovanej polohy robota
 roslaunch m2wr_description rviz.launch
 #Mapovaci balicek
 roslaunch gmapping slam_gmapping_pr2.launch
@@ -14,4 +13,10 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 rosrun map_server map_saver -f test.yaml
 #Prikaz na nahratie mapy
 rosrun map_server map_server test.yaml.yaml
-#
+#Prikaz na spustenie lokalizacie
+roslaunch amcl amcl_diff.launch #alebo toto > rosrun amcl amcl scan:=m2wr/laser/scan
+#Prikaz na spustenie navigacie
+roslaunch move_base move_base.launch
+
+#Nasledne si uz len prebehnete robotom po mape (teleop_twist_keyboard) aby sa zlokalizoval a na vrchnej liste v Rvize 
+si zvolite pomocou tlacitka 2DNavGoal ciel kam sa chcete s robotom dostat. 
