@@ -52,7 +52,7 @@ rosrun map_server map_saver -f test.yaml
 
 Príkaz na nahratie mapy
 ```
-rosrun map_server map_server test.yaml.yaml
+rosrun map_server map_server fMapa.yaml
 ```
 
 Príkaz na spustenie lokalizácie
