@@ -10,12 +10,19 @@ Pracujeme s niekoľkými existujúcimi balíkmi, ktoré je potrebné mať nainš
 rosdep install -si --reinstall --from-path ~/catkin_ws/src
 ```
 
-### Návod na spustenie
+## Návod na spustenie
 
-Na začiatok musíme skompilovať náš workspace
+Skopírujeme si ```/src``` adresár do nášho workspace
+```
+cp -r src/* ~/catkin_ws/src/
+```
+
+potom musíme skompilovať náš workspace
 ```
 roscd; cd ..; catkin_make
 ```
+
+Následne už môžme spúšťať samotné balíky nášho projektu:
 
 Spawnem svet (nezabudni si nahrat bludisko)
 
@@ -62,11 +69,9 @@ Následne si už len pomocou klávesnice prebehneme robotom po mape aby sa zloka
 
 
 
-## Návod na spustenie **tp_gui**
+### Návod na spustenie **tp_gui**
 
-Explain how to run the automated tests for this system
-
-Príkaz na spustenie aplikácie
+Príkaz na spustenie aplikácie (predpokladáme, že beží gazebo simulácia)
 ```
 rosrun tp_gui tp_gui
 ```
